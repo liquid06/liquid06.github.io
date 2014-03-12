@@ -1,2 +1,15 @@
-<h1>Why hello there, just testing really.</h1>
-<p>Ready for the new year?</p>
+---
+layout: default
+title: Home test
+---
+
+<h1>This is test content</h1>
+<p>I am creating test content as I look through documentation on how to use these tools.</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
