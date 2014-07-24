@@ -3,13 +3,66 @@ layout: default
 title: Liquid Change
 ---
 
-<dl>
-  {% for post in site.posts %}
-    <dt>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </dt>
-    <dd>
-    {{ post.excerpt }}
-    </dd>
-  {% endfor %}
-</ul>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Hey look there, a framework.</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Still testing!</h1>
+        <p>Because why not.</p>
+        <p><a class="btn btn-primary btn-lg" role="button">It has been awhile</a></a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>I have a few things to do</h2>
+          <p>And this is really just a test</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>I can't decide</h2>
+          <p>Whether it's better to start from scratch</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>But</h2>
+          <p>I have too many things to do and I may not have time for anything else right now!</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+      <div class="container">
+        <p>For some reason I thought it would be a good idea to try Github for Windows. Turns out I don't really like working in Windows. So commit this test so I can get out of here.</p>
+        <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            {{ post.excerpt }}
+          </li>
+        {% endfor %}
+      </ul>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2014</p>
+      </footer>
+    </div> <!-- /container --> 
