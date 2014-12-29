@@ -3,12 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <title>{{ page.title }}</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1><a href="">Liquid Change</a></h1>
+  <h1><a href="/">Liquid Change</a></h1>
   <p class="byline">{{ page.byline }}</p>
   {{ content }}
-  <p class="caveat">.</p>
+  
+  {% include footer.html %}
 </body>
 </html>

@@ -4,10 +4,15 @@
 @import "variables";
 @import "normalize";
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: $font-stack-sans;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.6;
+  margin: 2rem;
 }
 
 h1,
@@ -17,18 +22,33 @@ h3 {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 3.6rem;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 a {
   text-decoration: none;
   border-bottom: 1px solid;
+  
+  &:hover {
+    border-bottom: 0px;
+  }
+}
+
+.post-date {
+  font-style: italic;
+  color: #666;
+  font-size: 1.3rem;
+}
+footer {
+  border-top: 1px solid #666;
+  margin-top: 1rem;
+  padding-top: 1rem;
 }
