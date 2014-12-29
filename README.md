@@ -3,7 +3,7 @@ Why am I making a personal website?
 
 The last time I made a personal site was around 2004. I was freelancing and I needed a website for my business, but it felt strange and I couldn't quite give over my whole domain to business interests. I built a site using Dreamweaver (in code view!) and it was probably all kinds of awful, but it was the best I knew at the time. 
 
-Before that I made one other personal website that I was really proud of. I built it using Dreamweaver (in visual mode _boo_) and it was for an art assignment. It was weird and impractical. It featured an image of my hair that I created with a scanner.
+Before that I made one other personal website that I was really proud of. I built it using Dreamweaver (in visual mode *boo*) and it was for an art assignment. It was weird and impractical. It featured an image of my hair that I created with a scanner.
 
 In community college I took a class and got some kind of certificate in Microsoft FrontPage. Of all the places on campus where I spent my time, the computer lab in the library seemed the most full of potential.
 
