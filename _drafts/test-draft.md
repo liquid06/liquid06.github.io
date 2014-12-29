@@ -1,6 +1,7 @@
 ---
 layout: default
 title: test draft
+byline: Really not all that great.
 ---
 
 Test Draft
