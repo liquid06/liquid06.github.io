@@ -13,6 +13,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   margin: 2rem;
+  transition: margin 0.2s;
 }
 
 h1,
@@ -77,5 +78,30 @@ footer {
     padding-right: 0.5rem;
     border-right: 1px;
     border-color: #666;
+  }
+}
+@media (min-width: 475px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (min-width: 700px) {
+  body {
+    margin: 2rem 5rem;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    margin: 2rem 8rem;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    margin: 2rem 16rem;
+  }
+}
+@media (min-width: 1500px) {
+  body {
+    margin: 2rem 24rem;
   }
 }
