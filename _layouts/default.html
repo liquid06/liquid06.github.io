@@ -7,10 +7,13 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1><a href="/">Liquid Change</a></h1>
-  <p class="byline">{{ page.byline }}</p>
-  {{ content }}
-  
+  <div class="banner">
+    <h1><a href="/">Liquid Change</a></h1>
+    <p class="byline">{{ page.byline }}</p>
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
   {% include footer.html %}
 </body>
 </html>
