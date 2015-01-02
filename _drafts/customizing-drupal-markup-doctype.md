@@ -30,3 +30,8 @@ Running the resulting markup through the regular w3c validator using the experim
 4. Taking version off the htmle element
 
 I like approaching things from the inside-out, which is also a good method if you're working with an already-defined style guide, but changing the doctype first gives you the opportunity to use html5 elements when marking up those things.
+
+Other things to customize in the html.tpl.php template
+
+* What's output for the <title> element ($head_title, which includes the site name, title and slogan)
+* The markup for the "Skip to main content" link.
