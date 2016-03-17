@@ -13,12 +13,16 @@ I'm starting with a basic Drupal 7 site using the Stark theme and the minimal in
 
 The first thing a modern developer might want to change is the doctype. Drupal core comes with a doctype that looks like this
 
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
   "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-  
+```
+
 Using the stark theme out-of-the-box, this validates. But the html5 doctype is so much simpler though.
 
+```html
 <!DOCTYPE html>
+```
 
 The way to override this first simple part is by having the theme override html.tpl.php. Copy it from your-drupal-root/modules/system/html.tpl.php into your custom theme.
 
@@ -43,9 +47,9 @@ Another thing that could be altered in the template preprocess function are what
 
 Normal classes output: html front logged-in one-sidebar sidebar-first page-node admin-menu plus there are more for the node type (if you're on a node) and for all the theme suggestions. So instead of making an individual tpl.php file to theme a page, modifications to the styling could still be made with CSS.
 
-Modules add to the list of classes as well; for example, admin-menu is used by the admin menu module to add some visual space to the top of the page so the menu doesn't obscure the content. Using template preprocess, extra classes you don't want to use can be stripped while still allowing contribs to add the ones they need. 
+Modules add to the list of classes as well; for example, admin-menu is used by the admin menu module to add some visual space to the top of the page so the menu doesn't obscure the content. Using template preprocess, extra classes you don't want to use can be stripped while still allowing contribs to add the ones they need.
 
-
+```php
 THEMENAME_preprocess_html {
   // Classes for body element. Allows advanced theming based on context
   // (home page, node of certain type, etc.)
@@ -67,4 +71,4 @@ THEMENAME_preprocess_html {
   }
 }
 //from zen
-
+```
